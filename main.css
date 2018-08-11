@@ -1,0 +1,213 @@
+body {
+	margin: 0;
+	background: #202020;
+	color: #ccc;
+}
+
+#loadingpage {
+	margin: 30px;
+	
+}
+
+#loadingLtrs {
+	text-align: center;
+}
+
+.loadLtr {
+	display: inline-block;
+	text-align: center;
+	width: 20px;
+	font-size: 30px;
+}
+
+#startTitle {
+	font-size: 75px;
+	text-align: center;
+	letter-spacing: 25px;
+}
+
+#startSlogan {
+	font-size: 20px;
+	text-align: center;
+}
+
+#playSelector {
+	font-size: 65px;
+	cursor: pointer;
+}
+
+#customshapesSelector, #tutorialSelector {
+	font-size: 25px;
+	padding: 15px;
+	width: 250px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#customContainer {
+	padding-top: 45px;
+	text-align: center;
+	font-size: 35px;
+}
+
+#customContainer div {
+	cursor: pointer;
+}
+
+#customContainer div:hover, #customshapesSelector:hover, #tutorialSelector:hover, #playSelector:hover, #customBack:hover {
+	color: #ef0;
+}
+
+.customNav {
+	padding: 15px;
+	font-size: 25px;
+}
+
+#customBack {
+	padding-right: 10px;
+	display: inline-block;
+}
+
+#sideLength {
+	font-size: 25px;
+	width: 70px;
+	
+}
+
+.customBtn {
+	font-size: 25px;
+}
+
+.customFrameCell {
+	width: 30px;
+	height: 15px;
+	background-color: orange;
+	display: inline-block;
+}
+
+.customFrameCell input {
+	width: 26px;
+	height: 15px;
+	font-size: 15px;
+}
+
+.btnBack {
+	cursor: pointer;
+}
+
+#customImage {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	width: 300px;
+	height: 300px;
+	background: orange;
+	line-height: 0;
+}
+
+#goldfoil {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	border: 2px solid #ccc;
+}
+
+
+
+.goldfoilthings {
+	height: 300px;
+}
+
+.directionControl {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 50px;
+	font-family: consolas;
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #202020;
+	color: #ccc;
+	border-right: 0;
+}
+
+.directionControl:focus, .offsetControl:focus {
+	color: blue;
+	outline: none;
+}
+
+#outputContainer input:focus {
+	color: inherit !important;
+}
+
+
+.offsetControl {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 50px;
+	font-family: consolas;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-left: 0;
+	border-right: 0;
+	background: #202020;
+	color: #ccc;
+}
+
+#controlContainer {
+	font-family: consolas;
+	padding-top: 30px;
+}
+
+.iamabutton {
+	cursor: pointer;
+	font-family: consolas;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 50px;
+	letter-spacing: 0;
+	padding: 5px;
+}
+
+
+.firey {
+	font-family: consolas;
+	margin-top: 10px;
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 50px;
+	letter-spacing: 0;
+	width: 200px;
+}
+
+.firey:hover, .iamabutton:hover {
+	color: lightblue;
+	border-color: lightblue;
+}
+
+.firey:active, .iamabutton:active {
+	color: blue;
+	border-color: blue;
+}
+
+.fireLetter {
+	display: inline-block;
+	width: 50px;
+	text-align: center;
+}
+
+#beam0,#beam1,#beam2,#beam3 {
+	position: relative;
+}
+
+#credits {
+	position: fixed;
+	bottom: 30px;
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+}

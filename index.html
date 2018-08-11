@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gold foil experiement</title>
+	<link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="startpage" style="display: block">
+		<div>
+			<div id="startTitle">
+				EXIT PATH
+			</div>
+			<div id="startSlogan">
+				For a better understanding of the Rutherford Gold Foil Experiment.<br />
+			</div>
+			<div style="margin-top: 145px">
+				<div id="loadingpage" style="display: block">
+					<div id="loadingLtrs"><div class="loadLtr">L</div><div class="loadLtr">o</div><div class="loadLtr">a</div><div class="loadLtr">d</div><div class="loadLtr">i</div><div class="loadLtr">n</div><div class="loadLtr">g</div><div class="loadLtr">.</div><div class="loadLtr">.</div><div class="loadLtr">.</div></div>
+				</div>
+
+				
+				<div id="starters" style="text-align: center; display: none">
+					<div id="playSelector">PLAY</div>
+					<div style="padding-top: 20px">
+						<div id="customshapesSelector">CUSTOM SHAPES</div>
+						<div>ENABLE TRACERS <input type="checkbox" id="tracerCheck" /></div>
+						<!--<div class="paddingSelector"></div>!-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="credits">
+			<div id="iamcredits">
+				<div>Created by Garret Gallion.</div>
+				<div>Inspired by <i>A Rutherford Scattering Simulation with Microcomputer Graphics.</i> (1989) for the Apple II computer</div>
+				<div>For Mrs. Lewis</div>
+			</div>
+		</div>
+	</div>
+	<div id="customshapes" style="display: none">
+		<div id="customContainer" style="display: block">
+			<div class="customDetail backtostart">BACK TO START</div>
+			<div class="customDetail" id="custom1">CUSTOM SHAPE 1</div>
+			<div class="customDetail" id="custom2">CUSTOM SHAPE 2</div>
+			<div class="customDetail" id="custom3">CUSTOM SHAPE 3</div>
+			<div class="customDetail" id="custom4">CUSTOM SHAPE 4</div>
+			<div class="customDetail" id="custom5">CUSTOM SHAPE 5</div>
+		</div>
+		<div id="customBuilder" style="display: none">
+			<div class="customNav">
+				<div>
+				<div id="customBack" class="btnBack">BACK</div>
+				<input type="button" class="customBtn" id="customSave" value="SAVE" />
+				<input type="button" class="customBtn" id="customSaveOff" value="SAVE OFFLINE" />
+				<input type="button" class="customBtn" id="customGen" value="GENERATE" disabled />
+				</div>
+			</div>
+			<div id="customFrame"></div>
+			<div id="customImage"></div>
+		</div>
+	</div>
+	<div id="main" style="display: none">
+		<div id="mainMenu">
+			<div style="margin-top: 150px; text-align: center;">
+				<div id="playStart" class="iamabutton">START</div>
+				<div style="padding-top: 15px">
+					<select id="playShape">
+						<option value="0">CUSTOM SHAPE #1</option>
+						<option value="1">CUSTOM SHAPE #2</option>
+						<option value="2">CUSTOM SHAPE #3</option>
+						<option value="3">CUSTOM SHAPE #4</option>
+						<option value="4">CUSTOM SHAPE #5</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div id="play" style="display: none; text-align: center; padding-top: 50px;">
+			<table style="display: inline-block">
+				<tr>
+					<td></td>
+					<td><div id="beam0" style="width: 3px; height: 50px;"></div></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><div style="height: 300px"><div id="beam3" style="width: 50px; height: 3px;"></div></div></td>
+					<td>
+					<div id="goldfoil">
+					</div>
+					</td>
+					<td><div style="height: 300px"><div id="beam1" style="width: 50px; height: 3px;"></div></div></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><div id="beam2" style="width: 3px; height: 50px;"></div></td>
+					<td></td>
+				</tr>
+			</table>
+			<div id="controlContainer">
+				<div>
+					<input id="controlDirection" readonly class="directionControl" type="text" value="T"
+						onkeydown="input.direction(event)" onselect="this.selectionStart = this.selectionEnd"><input id="controlOffset0" readonly class="offsetControl" type="text" value="0"
+						onkeydown="input.offset(event,0)" onselect="this.selectionStart = this.selectionEnd"><input id="controlOffset1" readonly class="offsetControl" type="text" value="0"
+						onkeydown="input.offset(event,1)" onselect="this.selectionStart = this.selectionEnd"><input id="controlOffset2" readonly class="offsetControl" type="text" value="0"
+						onkeydown="input.offset(event,2)" onselect="this.selectionStart = this.selectionEnd" style="border-right: 1px solid #ccc">
+					<div style="display: inline-block; font-size: 50px">-</div>
+					<div id="outputContainer" style="display: inline-block">
+						<input id="controlDirectionOut" readonly class="directionControl" type="text" 
+							onselect="this.selectionStart = this.selectionEnd"><input id="controlOffset0Out" readonly class="offsetControl" type="text"
+							onselect="this.selectionStart = this.selectionEnd"><input id="controlOffset1Out" readonly class="offsetControl" type="text"
+							onselect="this.selectionStart = this.selectionEnd"><input id="controlOffset2Out" readonly class="offsetControl" type="text"
+							style="border-right: 1px solid #ccc">
+					</div>
+				</div>
+				<div id="fire" class="firey" style="font-size: 50px">
+					<div class="fireLetter">F</div><div class="fireLetter">I</div><div class="fireLetter">R</div><div class="fireLetter">E</div>
+				</div>
+				<div class="backtostart btnBack" style="padding-top: 15px; font-size: 25pt">BACK</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="main.js" type="text/javascript"></script>
+</body>
+</html>
